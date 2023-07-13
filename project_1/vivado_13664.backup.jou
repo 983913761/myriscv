@@ -1,0 +1,116 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Jul  7 11:47:36 2023
+# Process ID: 13664
+# Current directory: C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11892 C:\Users\YiZhi_W\Desktop\dntd\myriscv\project_1\project_1.xpr
+# Log file: C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/vivado.log
+# Journal file: C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/core.v w ]
+add_files C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/core.v
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference ex ex_0
+create_bd_cell -type module -reference if_id if_id_0
+create_bd_cell -type module -reference id_ex id_ex_0
+create_bd_cell -type module -reference regs regs_0
+create_bd_cell -type module -reference ifetch ifetch_0
+create_bd_cell -type module -reference pc_reg pc_reg_0
+set_property location {2 262 -59} [get_bd_cells pc_reg_0]
+create_bd_cell -type module -reference rom rom_0
+create_bd_cell -type module -reference id id_0
+regenerate_bd_layout
+regenerate_bd_layout
+startgroup
+create_bd_port -dir I -type clk -freq_hz 25000000 clk
+connect_bd_net [get_bd_pins /regs_0/clk] [get_bd_ports clk]
+endgroup
+set_property location {-199 80} [get_bd_ports clk]
+set_property location {-45 71} [get_bd_ports clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins regs_0/reg1_raddr_i]
+undo
+set_property location {-87 24} [get_bd_ports clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins id_ex_0/clk]
+regenerate_bd_layout
+connect_bd_net [get_bd_ports clk] [get_bd_pins if_id_0/clk]
+regenerate_bd_layout
+connect_bd_net [get_bd_ports clk] [get_bd_pins pc_reg_0/clk]
+regenerate_bd_layout
+startgroup
+create_bd_port -dir I -type rst rst
+connect_bd_net [get_bd_pins /id_ex_0/rst] [get_bd_ports rst]
+endgroup
+connect_bd_net [get_bd_ports rst] [get_bd_pins if_id_0/rst]
+connect_bd_net [get_bd_ports rst] [get_bd_pins regs_0/rst]
+connect_bd_net [get_bd_ports rst] [get_bd_pins pc_reg_0/rst]
+connect_bd_net [get_bd_pins pc_reg_0/pc_o] [get_bd_pins ifetch_0/pc_addr_i]
+connect_bd_net [get_bd_pins ifetch_0/if2rom_addr_o] [get_bd_pins rom_0/inst_addr_i]
+connect_bd_net [get_bd_pins rom_0/inst_o] [get_bd_pins ifetch_0/rom_inst_i]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins ifetch_0/inst_addr_o] [get_bd_pins if_id_0/inst_addr_i]
+connect_bd_net [get_bd_pins ifetch_0/inst_o] [get_bd_pins if_id_0/inst_i]
+connect_bd_net [get_bd_pins if_id_0/inst_addr_o] [get_bd_pins id_0/inst_addr_i]
+connect_bd_net [get_bd_pins if_id_0/inst_o] [get_bd_pins id_0/inst_i]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins id_0/reg_wen] [get_bd_pins id_ex_0/reg_wen_i]
+connect_bd_net [get_bd_pins id_0/reg_wen] [get_bd_pins id_ex_0/rd_addr_i]
+undo
+connect_bd_net [get_bd_pins id_0/reg_wen] [get_bd_pins id_ex_0/rd_addr_i]
+undo
+connect_bd_net [get_bd_pins id_ex_0/rd_addr_i] [get_bd_pins id_0/rd_addr_o]
+connect_bd_net [get_bd_pins id_0/op1_o] [get_bd_pins id_ex_0/op1_i]
+connect_bd_net [get_bd_pins id_0/op2_o] [get_bd_pins id_ex_0/op2_i]
+connect_bd_net [get_bd_pins id_0/inst_addr_o] [get_bd_pins id_ex_0/inst_addr_i]
+connect_bd_net [get_bd_pins id_0/inst_o] [get_bd_pins id_ex_0/inst_i]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins regs_0/reg1_rdata_o] [get_bd_pins id_0/rs1_data_i]
+connect_bd_net [get_bd_pins regs_0/reg2_rdata_o] [get_bd_pins id_0/rs2_data_i]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins id_ex_0/op1_o] [get_bd_pins ex_0/op1_i]
+connect_bd_net [get_bd_pins id_ex_0/op2_o] [get_bd_pins ex_0/op2_i]
+connect_bd_net [get_bd_pins id_ex_0/inst_o] [get_bd_pins ex_0/inst_i]
+connect_bd_net [get_bd_pins id_ex_0/inst_addr_o] [get_bd_pins ex_0/inst_addr_i]
+connect_bd_net [get_bd_pins id_ex_0/reg_wen_o] [get_bd_pins ex_0/rd_wen_i]
+regenerate_bd_layout
+update_module_reference design_1_ex_0_0
+connect_bd_net [get_bd_pins id_ex_0/rd_addr_o] [get_bd_pins ex_0/rd_addr_i]
+connect_bd_net [get_bd_pins ex_0/rd_addr_o] [get_bd_pins regs_0/reg1_raddr_i]
+connect_bd_net [get_bd_pins ex_0/rd_wen_o] [get_bd_pins regs_0/reg_wdata_i]
+undo
+delete_bd_objs [get_bd_nets ex_0_rd_addr_o]
+connect_bd_net [get_bd_pins id_0/rs1_addr_o] [get_bd_pins regs_0/reg1_raddr_i]
+connect_bd_net [get_bd_pins id_0/rs2_addr_o] [get_bd_pins regs_0/reg2_raddr_i]
+connect_bd_net [get_bd_pins ex_0/rd_addr_o] [get_bd_pins regs_0/reg_waddr_i]
+connect_bd_net [get_bd_pins ex_0/rd_data_o] [get_bd_pins regs_0/reg_wdata_i]
+connect_bd_net [get_bd_pins ex_0/rd_wen_o] [get_bd_pins regs_0/reg_wen]
+regenerate_bd_layout
+save_bd_design
+make_wrapper -files [get_files C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+import_files -force -norecurse C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+regenerate_bd_layout
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_1_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_bd_design {C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+update_module_reference design_1_if_id_0_0
+close_bd_design [get_bd_designs design_1]
+file mkdir C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sim_1/new/tb.v w ]
+add_files -fileset sim_1 C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sim_1/new/tb.v
+update_compile_order -fileset sim_1
+open_bd_design {C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}

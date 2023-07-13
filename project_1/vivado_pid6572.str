@@ -1,0 +1,278 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 6572
+License: Customer
+
+Current time: 	Sun Jul 09 08:06:32 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/Vivado/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	F:/Vivado/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	YiZhi_W
+User home directory: C:/Users/YiZhi_W
+User working directory: C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: F:/Vivado/Vivado
+HDI_APPROOT: F:/Vivado/Vivado/2020.1
+RDI_DATADIR: F:/Vivado/Vivado/2020.1/data
+RDI_BINDIR: F:/Vivado/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/YiZhi_W/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/YiZhi_W/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/YiZhi_W/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	F:/Vivado/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/vivado.log
+Vivado journal file location: 	C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/vivado.jou
+Engine tmp dir: 	C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/.Xil/Vivado-6572-DESKTOP-6OVABTC
+
+Xilinx Environment Variables
+----------------------------
+INTELFPGAOCLSDKROOT: H:\Quartus\hld
+XILINX: F:/Vivado/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: F:/Vivado/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: F:/Vivado/Vivado/2020.1
+XILINX_SDK: F:/Vivado/Vitis/2020.1
+XILINX_VITIS: F:/Vivado/Vitis/2020.1
+XILINX_VIVADO: F:/Vivado/Vivado/2020.1
+XILINX_VIVADO_HLS: F:/Vivado/Vivado/2020.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,045 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 81 MB (+82264kb) [00:00:08]
+// [Engine Memory]: 1,045 MB (+944531kb) [00:00:08]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\YiZhi_W\Desktop\dntd\myriscv\project_1\project_1.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,045 MB. GUI used memory: 52 MB. Current time: 7/9/23, 8:06:33 AM CST
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 109 MB (+25773kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  3699 ms.
+// Tcl Message: open_project C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado/Vivado/2020.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1061.121 ; gain = 0.000 
+// Project name: project_1; location: C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1; part: xczu2cg-sfvc784-1-e
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (F, cs)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 134 MB (+19601kb) [00:00:35]
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 3); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 4); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 4); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 3); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 15); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb (tb.v)]", 29, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb (tb.v)]", 29, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 964 seconds
+selectCodeEditor("tb.v", 19, 355); // bP (w, cs)
+selectCodeEditor("tb.v", 23, 352); // bP (w, cs)
+selectCodeEditor("tb.v", 34, 368); // bP (w, cs)
+selectCodeEditor("tb.v", 36, 412); // bP (w, cs)
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, design_1_wrapper (design_1_wrapper.v)]", 21, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, design_1_wrapper (design_1_wrapper.v)]", 21, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("design_1_wrapper.v", 117, 214); // bP (w, cs)
+selectCodeEditor("design_1_wrapper.v", 117, 214, false, false, false, false, true); // bP (w, cs) - Double Click
+typeControlKey((HResource) null, "design_1_wrapper.v", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb.v", 1); // m (l, cs)
+selectCodeEditor("tb.v", 100, 433); // bP (w, cs)
+selectCodeEditor("tb.v", 93, 451); // bP (w, cs)
+typeControlKey((HResource) null, "tb.v", 'v'); // bP (w, cs)
+// Elapsed time: 28 seconds
+selectCodeEditor("tb.v", 357, 419); // bP (w, cs)
+// [GUI Memory]: 141 MB (+492kb) [00:23:07]
+// Elapsed time: 392 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton("BACK", "< Back"); // JButton (j, c)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "Memory File", 4); // cm (Q, F)
+// Elapsed time: 18 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "inst_test"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 28 seconds
+dismissDialog("Add Sources"); // c (cs)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: close [ open C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sim_1/new/inst_test.mem w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sim_1/new/inst_test.mem 
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Verilog]", 18); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Verilog]", 18); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File]", 31); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File]", 31); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File]", 31); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File, inst_test.mem]", 32, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Memory File, inst_test.mem]", 32, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("inst_test.mem", 189, 78); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("inst_test.mem", 645, 91); // bP (w, cs)
+floatFrame(PAResourceOtoP.PAViews_CODE, "inst_test.mem"); // aA (aL, cs)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+selectCodeEditor("inst_test.mem", 161, 39); // bP (w, aN)
+selectCodeEditor("inst_test.mem", 182, 7); // bP (w, aN)
+// Elapsed time: 11 seconds
+selectCodeEditor("inst_test.mem", 244, 30); // bP (w, aN)
+selectCodeEditor("inst_test.mem", 246, 12); // bP (w, aN)
+// Elapsed time: 51 seconds
+selectCodeEditor("inst_test.mem", 239, 8); // bP (w, aN)
+// Elapsed time: 18 seconds
+selectCodeEditor("inst_test.mem", 242, 27); // bP (w, aN)
+// Elapsed time: 39 seconds
+selectCodeEditor("inst_test.mem", 392, 78); // bP (w, aN)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("inst_test.mem", 0, 45); // bP (w, aN)
+// Elapsed time: 40 seconds
+selectCodeEditor("inst_test.mem", 348, 63); // bP (w, aN)
+dockFrame(PAResourceOtoP.PAViews_CODE, "inst_test.mem"); // aA (aL, aN)
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+// HMemoryUtils.trashcanNow. Engine heap size: 1,045 MB. GUI used memory: 74 MB. Current time: 7/9/23, 8:36:35 AM CST
+// Elapsed time: 1335 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb.v", 1); // m (l, cs)
+floatFrame(PAResourceOtoP.PAViews_CODE, "tb.v *"); // aA (aL, cs)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+// Elapsed time: 26 seconds
+selectCodeEditor("tb.v", 115, 666); // bP (w, aN)
+// Elapsed time: 10 seconds
+selectCodeEditor("tb.v", 172, 745); // bP (w, aN)
+selectCodeEditor("tb.v", 193, 726); // bP (w, aN)
+// Elapsed time: 20 seconds
+selectCodeEditor("tb.v", 203, 729); // bP (w, aN)
+selectCodeEditor("tb.v", 200, 729); // bP (w, aN)
+// Elapsed time: 30 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, design_1_wrapper (design_1_wrapper.v)]", 21); // B (F, cs)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, design_1_wrapper (design_1_wrapper.v)]", 21); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 22); // B (F, cs)
+// Elapsed time: 41 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd), design_1_rom_0_0 (Module Reference Wrapper)]", 30); // B (F, cs)
+// Elapsed time: 26 seconds
+selectCodeEditor("design_1_wrapper.v", 698, 152); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd), design_1_rom_0_0 (Module Reference Wrapper), rom (rom.v)]", 34, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd), design_1_rom_0_0 (Module Reference Wrapper), rom (rom.v)]", 34, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("tb.v", 261, 572); // bP (w, aN)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb.v", 481, 731); // bP (w, aN)
+selectCodeEditor("tb.v", 135, 778); // bP (w, aN)
+selectCodeEditor("tb.v", 175, 790); // bP (w, aN)
+selectCodeEditor("tb.v", 175, 802); // bP (w, aN)
+selectCodeEditor("tb.v", 272, 833); // bP (w, aN)
+selectCodeEditor("tb.v", 73, 803); // bP (w, aN)
+selectCodeEditor("tb.v", 164, 837); // bP (w, aN)
+selectCodeEditor("tb.v", 174, 827); // bP (w, aN)

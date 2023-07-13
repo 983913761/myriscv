@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/defines.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core
+INFO: [VRFC 10-2458] undeclared symbol clk_n, assumed default net type wire [C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/core.v:100]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/dff_set.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dff_set
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/id_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/if_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/ifetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ifetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

@@ -22,7 +22,7 @@
 
 module regs(
     input wire  clk,
-    input wire  rst,
+    input wire  rst_n,
     
     input wire[4:0]     reg1_raddr_i,
     input wire[4:0]     reg2_raddr_i,
@@ -38,7 +38,7 @@ module regs(
     reg [31:0] regs[0:31];
     always @(*)
     begin
-        if(!rst)
+        if(!rst_n)
             reg1_rdata_o <= 32'b0;
         else if(reg1_raddr_i == 5'b0)
                 reg1_rdata_o <= 32'b0;
@@ -50,7 +50,7 @@ module regs(
     
     always @(*)
     begin
-        if(!rst)
+        if(!rst_n)
             reg2_rdata_o <= 32'b0;
         else if(reg2_raddr_i == 5'b0)
                 reg2_rdata_o <= 32'b0;
@@ -61,16 +61,16 @@ module regs(
     end    
     
     integer i;
-    always @(posedge clk or negedge rst)
+    always @(posedge clk or negedge rst_n)
     begin
-        if(!rst)
+        if(!rst_n)
         begin
             for(i=0;i<=31;i=i+1)
             begin
                 regs[i] <= 32'b0;
             end    
         end
-        else if(reg_wen)
+        else if(reg_wen && reg_waddr_i != 5'b0)
         begin
             regs[reg_waddr_i] <= reg_wdata_i;
         end

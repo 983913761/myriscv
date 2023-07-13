@@ -1,0 +1,18 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sim_1/new/tb.v,1688949589,verilog,,,,tb,,,../../../../project_1.srcs/sources_1/new,,,,,
+C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/core.v,1688957260,verilog,,C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/dff_set.v,,core,,,../../../../project_1.srcs/sources_1/new,,,,,
+C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/defines.v,1688541732,verilog,,C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/core.v,,,,,../../../../project_1.srcs/sources_1/new,,,,,
+C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/dff_set.v,1688014016,verilog,,C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/ex.v,,dff_set,,,../../../../project_1.srcs/sources_1/new,,,,,
+C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/ex.v,1688708060,verilog,,C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/id.v,,ex,,,../../../../project_1.srcs/sources_1/new,,,,,
+C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/id.v,1688705878,verilog,,C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/id_ex.v,,id,,,../../../../project_1.srcs/sources_1/new,,,,,
+C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/id_ex.v,1688956439,verilog,,C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/if_id.v,,id_ex,,,../../../../project_1.srcs/sources_1/new,,,,,
+C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/if_id.v,1688954119,verilog,,C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/ifetch.v,C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/defines.v,if_id,,,../../../../project_1.srcs/sources_1/new,,,,,
+C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/ifetch.v,1688951584,verilog,,C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/pc_reg.v,,ifetch,,,../../../../project_1.srcs/sources_1/new,,,,,
+C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/pc_reg.v,1688953762,verilog,,C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/regs.v,,pc_reg,,,../../../../project_1.srcs/sources_1/new,,,,,
+C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/regs.v,1688704014,verilog,,C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/rom.v,,regs,,,../../../../project_1.srcs/sources_1/new,,,,,
+C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/rom.v,1687861557,verilog,,C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sources_1/new/soc.v,,rom,,,../../../../project_1.srcs/sources_1/new,,,,,
+,,,,C:/Users/YiZhi_W/Desktop/dntd/myriscv/project_1/project_1.srcs/sim_1/new/tb.v,,soc,,,,,,,,

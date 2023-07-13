@@ -82,6 +82,31 @@ module id(
                 endcase
             end
             
+            `INST_TYPE_R_M:
+            begin
+                case(func3)
+                    `INST_ADD_SUB:
+                        begin
+                            rs1_addr_o = rs1;
+                            rs2_addr_o = rs2;
+                            op1_o = rs1_data_i;
+                            op2_o = rs2_data_i;
+                            rd_addr_o = rd;
+                            reg_wen = 1'b1;
+                        end
+                    
+                    default:
+                        begin
+                            rs1_addr_o = 5'b0;
+                            rs2_addr_o = 5'b0;
+                            op1_o = 32'b0;
+                            op2_o = 32'b0;
+                            rd_addr_o = 5'b0;
+                            reg_wen = 1'b0;
+                        end
+                endcase
+            end
+            
             default:
                 begin
                     rs1_addr_o = 5'b0;

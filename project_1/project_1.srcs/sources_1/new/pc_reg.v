@@ -22,19 +22,19 @@
 
 module pc_reg(
     input wire          clk,
-    input wire          rst,
-    output reg [31:0]   pc_o
+    input wire          rst_n,
+    output reg [31:0]   pc_addr_o
     );
     
-    always@(posedge clk or negedge rst)
+    always@(posedge clk or negedge rst_n)
     begin
-        if(!rst)
+        if(!rst_n)
             begin
-                pc_o <= 32'd0;
+                pc_addr_o <= 32'd0;
             end
         else
             begin
-                pc_o <= pc_o + 'd4;
+                pc_addr_o <= pc_addr_o + 'd4;
             end
     end
 endmodule

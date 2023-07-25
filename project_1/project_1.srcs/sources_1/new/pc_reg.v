@@ -23,6 +23,8 @@
 module pc_reg(
     input wire          clk,
     input wire          rst_n,
+    input wire [31:0]   jump_addr_i,
+    input wire          jump_en,        
     output reg [31:0]   pc_addr_o
     );
     
@@ -32,9 +34,9 @@ module pc_reg(
             begin
                 pc_addr_o <= 32'd0;
             end
-        else
-            begin
+        else if(jump_en)
+                pc_addr_o <= jump_addr_i;
+            else
                 pc_addr_o <= pc_addr_o + 'd4;
-            end
     end
 endmodule

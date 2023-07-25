@@ -26,13 +26,14 @@ module dff_set #(
 (
     input wire clk,
     input wire rst,
+    input wire set,
     input wire [DW-1:0] set_data,
     input wire [DW-1:0] data_i,
     output reg [DW-1:0] data_o
 );
 
     always@(posedge clk or negedge rst)
-        if(!rst)
+        if(!rst || set)
             data_o <= set_data;
         else
             data_o <= data_i;

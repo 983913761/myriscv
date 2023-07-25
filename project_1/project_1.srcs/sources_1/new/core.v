@@ -57,9 +57,17 @@ module core(
     wire [4:0]  ex2regs_rd_addr;
     wire [31:0] ex2regs_rd_data;
     wire        ex2regs_rd_wen;
+    
+    wire [31:0] ex2jump_ctrl_jump_addr;
+    wire ex2jump_ctrl_jump_en; 
+    wire [31:0] jump_ctrl_jump_addr_o;
+    wire        jump_ctrl_jump_en_o;
+    wire        jump_ctrl_hold_flag_o;
     pc_reg pc_reg_0(
         .clk        (clk),
         .rst_n      (rst_n),
+        .jump_addr_i(jump_ctrl_jump_addr_o),
+        .jump_en    (jump_ctrl_jump_en_o),        
         .pc_addr_o  (pc2if_pc_addr)
     );
     
@@ -74,6 +82,7 @@ module core(
     if_id if_id_o(
         .clk            (clk),
         .rst_n          (rst_n),
+        .hold_flag_i    (jump_ctrl_hold_flag_o),
         .inst_i         (if2if_id_inst),
         .inst_addr_i    (if2if_id_inst_addr),
         .inst_addr_o    (if_id2id_inst_addr),
@@ -110,6 +119,7 @@ module core(
     id_ex id_ex_0(
     .clk            (clk),
     .rst_n          (rst_n),
+    .hold_flag_i    (jump_ctrl_hold_flag_o),
     .inst_i         (id2id_ex_inst),
     .inst_addr_i    (id2id_ex_inst_addr),
     .op1_i          (id2id_ex_op1),
@@ -124,6 +134,7 @@ module core(
     .reg_wen_o      (id_ex2ex_reg_wen)
     );
     
+
     ex ex_0(
         .inst_i         (id_ex2ex_inst),    
         .inst_addr_i    (id_ex2ex_inst_addr),
@@ -133,6 +144,18 @@ module core(
         .rd_wen_i       (id_ex2ex_reg_wen),         
         .rd_addr_o      (ex2regs_rd_addr), 
         .rd_data_o      (ex2regs_rd_data), 
-        .rd_wen_o       (ex2regs_rd_wen)
+        .rd_wen_o       (ex2regs_rd_wen),
+        .jump_addr_o    (ex2jump_ctrl_jump_addr),
+        .jump_en_o      (ex2jump_ctrl_jump_en),
+        .hold_flag_o     (ex2jump_ctrl_hold_flag)
+    );
+
+    jump_ctrl jump_ctrl_0(
+        .jump_addr_i    (ex2jump_ctrl_jump_addr),
+        .jump_en_i      (ex2jump_ctrl_jump_en),
+        .hold_flag_i    (ex2jump_ctrl_hold_flag),
+        .jump_addr_o    (jump_ctrl_jump_addr_o),
+        .jump_en_o      (jump_ctrl_jump_en_o),
+        .hold_flag_o    (jump_ctrl_hold_flag_o)
     );
 endmodule
